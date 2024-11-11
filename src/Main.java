@@ -13,6 +13,22 @@ public class Main {
             for (int w : Keep) { //check
                 System.out.println(w);
             }
+            //Sorting Part (using Bubble Sort)
+            for(int i=0 ; i < Keep.length ; i++) {
+                for(int j=0 ; j < Keep.length ; j++) {
+                    if(Keep[i] > Keep[j]) {
+                        int temp = Keep[i];
+                        Keep[i] = Keep[j];
+                        Keep[j] = temp;
+                    }
+                }
+            }
+            System.out.println("Sorted: ");
+            for(int w : Keep) { //w is member of Keep (loop at first-last element)
+                System.out.println(w);
+            }
+        } else {
+            System.out.println("Size must be greater than 0");
         }
     }
 }
