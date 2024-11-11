@@ -10,7 +10,7 @@ public class Main {
             for (int i = 0; i < Keep.length; i++) { //i has value between 0 - N-1
                 Keep[i] = Get.nextInt();
             }
-            for (int w : Keep) { //check Array
+            for (int w : Keep) { //check
                 System.out.println(w);
             }
         }
